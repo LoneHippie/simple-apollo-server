@@ -36,7 +36,7 @@ const Mutations = gql`
 `;
 
 export const typeDefs = gql`
-    ${Queries}
-    ${HikeTypes}    
+    ${HikeTypes} 
+    ${Queries}   
     ${Mutations}
 `;

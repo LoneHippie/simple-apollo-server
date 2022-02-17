@@ -1,4 +1,3 @@
-import { createEntryHike } from '../controllers/hikeController';
 import Hike from '../models/hikeModel'
 
 export const resolvers = {
@@ -7,7 +6,7 @@ export const resolvers = {
     },
     Mutation: {
         createHike: async (_, args) => {
-            const hike = new Hike(args);
+            const hike = new Hike(args)
             await hike.save();
             return hike;
         }
